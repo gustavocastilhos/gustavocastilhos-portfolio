@@ -111,3 +111,130 @@ button{
     padding:25px;
     border-radius:15px;
 }
+
+.titulo-destaque {
+    color: #8b5cf6;
+}
+
+/* Redefinir a seção 'sobre' para usar Grid */
+#sobre {
+    padding: 100px 8%;
+}
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Duas colunas: texto e extra */
+    gap: 80px; /* Espaço maior entre as colunas */
+    align-items: center; /* Alinha verticalmente se o texto for curto */
+}
+
+/* Coluna de Texto e Botão */
+.sobre-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.sobre-texto p {
+    margin-bottom: 20px;
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* Estilos para o Botão de Download */
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: transparent;
+    border: 1px solid white; /* Borda branca padrão */
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.download-cv:hover {
+    background: white;
+    color: #070b14;
+}
+
+.download-cv i {
+    font-size: 1.1rem;
+}
+
+/* Coluna de Cartões e Habilidades */
+.sobre-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Grade de 3 cartões menores */
+.cartoes-grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-extra {
+    background: #101827;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Ícones roxos nos cartões */
+.icone-cartao {
+    font-size: 2.5rem;
+    color: #8b5cf6;
+}
+
+.card-extra h3 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.card-extra p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+/* Seção de Habilidades Detalhada */
+.habilidades-secao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.tech-grid-detalhada {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Botões de Habilidades Individuais */
+.habilidade {
+    padding: 12px 20px;
+    background: #101827;
+    border-radius: 10px;
+    border: 1px solid #1f2937; /* Borda padrão escura */
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cores específicas de borda para cada habilidade (conforme objetivo) */
+.habilidade.javascript { border-color: gold; color: gold; }
+.habilidade.python { border-color: #3572A5; color: #3572A5; }
+.habilidade.html { border-color: #E34F26; color: #E34F26; }
+.habilidade.css { border-color: #1572B6; color: #1572B6; }
+.habilidade.git { border-color: #F05032; color: #F05032; }
+.habilidade.sql { border-color: #336791; color: #336791; }
+
+/* ... (mantenha os outros estilos das outras seções) ... */
