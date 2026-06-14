@@ -26,7 +26,7 @@ Meu objetivo é criar soluções que resolvam problemas reais através da tecnol
 
 ## 📌 Projetos em Destaque
 
-* Sistema de Busca de Carros
+* Site 1 fase SENAI
 * Análise de Preços
 * Dia dos Namorados
 * Outros projetos em desenvolvimento
