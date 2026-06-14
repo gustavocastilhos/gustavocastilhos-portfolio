@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Castilhos</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -106,67 +107,126 @@
 
         <section id="projetos">
 
-            <h2>Projetos</h2>
+    <div class="projetos-header">
+        <h2 class="titulo-destaque">Projetos</h2>
+        <a href="https://github.com/seu-usuario" target="_blank" class="github-link">
+            Ver todos no GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
 
-            <div class="project-grid">
+    <div class="project-grid">
 
-                <article class="project-card">
-                    <h3>Sistema de Busca de Carros</h3>
-                    <p>
-                        Sistema que busca oportunidades abaixo da FIPE.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Dia dos Namorados</h3>
-                    <p>
-                        Página interativa desenvolvida com HTML, CSS e JS.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Análise de Preços</h3>
-                    <p>
-                        Projeto de coleta e análise de dados.
-                    </p>
-                </article>
-
+        <article class="project-card">
+            <i class="fas fa-laptop-code project-icon senai-icon"></i>
+            <h3>SENAI-FASE-1</h3>
+            <p>
+                Site destinado às atividades e projetos desenvolvidos durante a 1ª fase do curso de Desenvolvimento de Sistemas.
+            </p>
+            <div class="project-footer">
+                <div class="project-tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                    <span class="tag js">JavaScript</span>
+                </div>
+                <a href="#" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
+        </article>
 
+        <article class="project-card">
+            <i class="fas fa-heart project-icon namorados-icon"></i>
+            <h3>Dia dos Namorados</h3>
+            <p>
+                Experiência web interativa que esconde uma declaração romântica por trás de um contrato corporativo fictício.
+            </p>
+            <div class="project-footer">
+                <div class="project-tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                    <span class="tag js">JavaScript</span>
+                </div>
+                <a href="#" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <i class="fas fa-chart-line project-icon analise-icon"></i>
+            <h3>Análise de Preços</h3>
+            <p>
+                Projeto de coleta, tratamento e análise de dados voltado à extração de insights e organização de informações.
+            </p>
+            <div class="project-footer">
+                <div class="project-tags">
+                    <span class="tag python">Python</span>
+                    <span class="tag pandas">Pandas</span>
+                    <span class="tag dados">Análise de Dados</span>
+                </div>
+                <a href="#" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+        <section id="tecnologias" class="tecnologias-nova">
+            <h2 class="titulo-destaque">Tecnologias</h2>
+            
+            <div class="tech-icons-grid">
+                <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="tech-item"><i class="devicon-github-original" style="color: white;"></i><span>GitHub</span></div>
+                <div class="tech-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                <div class="tech-item"><i class="fas fa-database" style="color: #8b5cf6;"></i><span>SQL</span></div>
+            </div>
         </section>
 
-        <section id="tecnologias">
+        <section id="contato" class="contato-novo">
+            <div class="contato-container">
+                
+                <div class="contato-info">
+                    <h2 class="titulo-destaque">Contato</h2>
+                    <p>Vamos conversar? Fique à vontade<br>para entrar em contato comigo!</p>
+                    
+                    <ul class="contato-lista">
+                        <li><i class="far fa-envelope"></i> gusmacast@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Florianópolis, Brasil</li>
+                        <li><i class="fab fa-linkedin"></i> linkedin.com/in/gustavocastilhos</li>
+                        <li><i class="fab fa-github"></i> github.com/gustavocastilhos</li>
+                    </ul>
+                </div>
 
-            <h2>Tecnologias</h2>
-
-            <div class="tech-grid">
-
-                <div>JavaScript</div>
-                <div>Python</div>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Git</div>
-                <div>GitHub</div>
+                <div class="contato-form">
+                    <form action="#">
+                        <div class="form-row">
+                            <input type="text" placeholder="Nome" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <textarea placeholder="Mensagem" rows="5" required></textarea>
+                        <button type="submit" class="btn-enviar">
+                            Enviar mensagem <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
 
             </div>
-
-        </section>
-
-        <section id="contato">
-
-            <h2>Contato</h2>
-
-            <p>
-                Email: gusmarcast@gmail.com
-            </p>
-
-            <p>
-                Florianópolis - SC
-            </p>
-
         </section>
 
     </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Gustavo Martins Castilhos. Todos os direitos reservados.</p>
+        <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
 
     <script src="./js/script.js"></script>
 
