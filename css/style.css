@@ -11,6 +11,9 @@ body{
 }
 
 header{
+    position: sticky;
+    top: 0;
+    background-color: #0B0E14;
     padding:20px 8%;
     border-bottom:1px solid #1f2937;
 }
