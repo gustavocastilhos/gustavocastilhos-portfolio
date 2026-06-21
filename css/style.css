@@ -14,17 +14,22 @@ header{
     position: sticky;
     top: 0;
     background-color: #0B0E14;
-    padding:20px 8%;
+    padding: 20px 10%;
     border-bottom:1px solid #1f2937;
+    z-index: 1000;
 }
+/* Controla o tamanho da logo */
 
 nav{
+    margin: 0;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
-nav h2{
-    color:#8b5cf6;
+nav h2 img {
+    height: 60px;        /* Força a imagem a ter uma altura padrão de barra de navegação */
+    width: auto;         /* Calcula a largura automaticamente para não amassar o desenho */
+    object-fit: contain; /* Garante que ela se encaixe perfeitamente */
 }
 
 ul{
